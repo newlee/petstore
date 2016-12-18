@@ -1,0 +1,60 @@
+{
+	"ImportPath": "github.com/newlee/petstore",
+	"GoVersion": "go1.7",
+	"GodepVersion": "v75",
+	"Deps": [
+		{
+			"ImportPath": "github.com/labstack/echo",
+			"Comment": "v3.0.3-15-g561f15c",
+			"Rev": "561f15ccf1a3e72841862039001bfdf453cfcb03"
+		},
+		{
+			"ImportPath": "github.com/labstack/gommon/color",
+			"Comment": "v0.1.0-2-g447fe74",
+			"Rev": "447fe7433567c785af957e549aadae2bf2000071"
+		},
+		{
+			"ImportPath": "github.com/labstack/gommon/log",
+			"Comment": "v0.1.0-2-g447fe74",
+			"Rev": "447fe7433567c785af957e549aadae2bf2000071"
+		},
+		{
+			"ImportPath": "github.com/mattn/go-colorable",
+			"Comment": "v0.0.6-9-gd228849",
+			"Rev": "d228849504861217f796da67fae4f6e347643f15"
+		},
+		{
+			"ImportPath": "github.com/mattn/go-isatty",
+			"Rev": "30a891c33c7cde7b02a981314b4228ec99380cca"
+		},
+		{
+			"ImportPath": "github.com/tylerb/graceful",
+			"Comment": "v1.2.13-2-g4df1190",
+			"Rev": "4df1190835320af7076dfcf27b3d071fd3612caf"
+		},
+		{
+			"ImportPath": "github.com/valyala/fasttemplate",
+			"Rev": "3b874956e03f1636d171bda64b130f9135f42cff"
+		},
+		{
+			"ImportPath": "golang.org/x/crypto/acme",
+			"Rev": "9a6f0a01987842989747adff311d80750ba25530"
+		},
+		{
+			"ImportPath": "golang.org/x/crypto/acme/autocert",
+			"Rev": "9a6f0a01987842989747adff311d80750ba25530"
+		},
+		{
+			"ImportPath": "golang.org/x/net/context",
+			"Rev": "cfae461cedfdcab6e261a26eb77db53695623303"
+		},
+		{
+			"ImportPath": "golang.org/x/net/context/ctxhttp",
+			"Rev": "cfae461cedfdcab6e261a26eb77db53695623303"
+		},
+		{
+			"ImportPath": "golang.org/x/sys/unix",
+			"Rev": "d75a52659825e75fff6158388dddc6a5b04f9ba5"
+		}
+	]
+}
