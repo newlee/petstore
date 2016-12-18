@@ -1,6 +1,6 @@
 Save currently-used dependencies to file Godeps:
 
-$ godep save
+$ godep  save -t ./server ./
 
 Build project using saved dependencies:
 
