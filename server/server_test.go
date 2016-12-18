@@ -14,7 +14,7 @@ var _ = Describe("Server", func() {
 			e := echo.New()
 			Router(e);
 			c, _ := request("GET", "/", e)
-			Expect(c, http.StatusOK)
+			Expect(c).To(Equal(http.StatusOK))
 		})
 	})
 })
