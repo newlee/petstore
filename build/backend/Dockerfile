@@ -1,6 +1,6 @@
 FROM centos
 
-ADD ./petstore /bin/petstore
+ADD ./build/petstore /bin/petstore
 
 ENTRYPOINT /bin/petstore
 
