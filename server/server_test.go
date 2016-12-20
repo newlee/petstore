@@ -37,7 +37,7 @@ var _ = Describe("Server", func() {
 
 			c, b := request("GET", "/pets", e)
 			pets := make([]Pet, 0)
-			json.Unmarshal([]byte(b),&pets)
+			json.Unmarshal([]byte(b), &pets)
 			Expect(len(pets)).To(Equal(1))
 			Expect(pets[0].Name).To(Equal("Husky"))
 		})

@@ -22,7 +22,7 @@ var petCreateHandler = func(c echo.Context) (err error) {
 	return c.JSON(http.StatusCreated, "")
 }
 
-func Router(e *echo.Echo){
+func Router(e *echo.Echo) {
 	e.GET("/", homeHandler)
 	e.GET("/pets", petListHandler)
 	e.POST("/pets", petCreateHandler)
