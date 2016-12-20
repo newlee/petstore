@@ -24,22 +24,22 @@ var _ = Describe("Server", func() {
 		})
 	})
 
-	Context("Products", func() {
-		It("should return empty when have not any product", func() {
-			c, b := request("GET", "/products", e)
+	Context("Pets", func() {
+		It("should return empty when have not any pets", func() {
+			c, b := request("GET", "/pets", e)
 			Expect(c).To(Equal(http.StatusOK))
 			Expect(b).To(Equal("[]"))
 		})
 
-		It("should return product after created.", func() {
-			c, _ := requestWithBody("POST", "/products", e, `{"name":"Husky"}`)
+		It("should return husky after created.", func() {
+			c, _ := requestWithBody("POST", "/pets", e, `{"name":"Husky"}`)
 			Expect(c).To(Equal(http.StatusCreated))
 
-			c, b := request("GET", "/products", e)
-			products := make([]Product, 0)
-			json.Unmarshal([]byte(b),&products)
-			Expect(len(products)).To(Equal(1))
-			Expect(products[0].Name).To(Equal("Husky"))
+			c, b := request("GET", "/pets", e)
+			pets := make([]Pet, 0)
+			json.Unmarshal([]byte(b),&pets)
+			Expect(len(pets)).To(Equal(1))
+			Expect(pets[0].Name).To(Equal("Husky"))
 		})
 	})
 })
