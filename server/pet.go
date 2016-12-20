@@ -10,17 +10,18 @@ type PetRepo interface {
 }
 
 type InMemoryPetRepo struct {
-	products []Pet
+	pets []Pet
 }
 
 func (repo *InMemoryPetRepo) Create(p Pet) {
-	repo.products = append(repo.products, p)
+	repo.pets = append(repo.pets, p)
 }
 
 func (repo *InMemoryPetRepo) All() []Pet {
-	return repo.products
+	return repo.pets
 }
 
 func NewInMemoryPetRepo() *InMemoryPetRepo {
-	return &InMemoryPetRepo{products:make([]Pet, 0)}
+	return &InMemoryPetRepo{pets:make([]Pet, 0)}
 }
+
